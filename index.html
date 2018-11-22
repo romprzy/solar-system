@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Orbits Patterns</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=latin" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <script type="module" src="index.js"></script>
+</head>
+<body>
+  <canvas id="canvas" width="1920" height="1080"></canvas>
+
+  <div id="controls">
+    <h2>Controls</h2>
+    <div class="p">
+      <button id="startAnimation">Start</button>
+      <button id="stopAnimation">Stop</button>
+    </div>
+    <div class="text-left">
+      <label>
+        <span class="label">Sun scale</span> <span class="resize-scale">1</span>px ≈ <input type="number" id="sun-scale" value="20000" min="1000" step="1000"> km
+      </label>
+      <label>
+        <span class="label">Planets scale</span> <span class="resize-scale">1</span>px ≈ <input type="number" id="planets-scale" value="500" min="100" step="25"> km
+      </label>
+      <label>
+        <span class="label">Orbits scale</span> <span class="resize-scale">1</span>px ≈ <input type="number" id="orbits-scale" value="500000" min="100000" step="25000"> km
+      </label>
+      <label>
+        <span class="label">Year on Earth</span> 1year : <input type="number" id="year" value="10000" min="100" step="100"> ms
+      </label>
+      <label>
+        <input type="color" id="planets-color">
+      </label>
+    </div>
+  </div>
+</body>
+</html>
